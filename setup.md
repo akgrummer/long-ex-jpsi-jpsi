@@ -42,8 +42,12 @@ title: Setup
 > ~~~bash
 > git commit -m "your message in quotes"
 > ~~~
-
-
+> 
+> push your commits to the repository on github (so they can be accessed from the web)
+> ~~~bash
+> git push
+> ~~~
+> 
 > ## Setting up Analysis Environment on LPC
 >
 > ~~~bash
