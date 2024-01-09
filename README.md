@@ -38,7 +38,7 @@ Note: the gitignore file already keeps the build file from being committed - but
 
 Current maintainer of this lesson is:
 
-* [Marco Musich](mailto:marco.musich@cern.ch)
+* [Aidan Grummer](mailto:agrummer@cern.ch)
 
 
 ## Authors
