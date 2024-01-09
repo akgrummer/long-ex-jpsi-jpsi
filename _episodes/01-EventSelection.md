@@ -108,14 +108,14 @@ The variable used for the muons is `rawMup4vect`. You can use `rawMup4vect[i]` w
 > ## Challenge: two further selections
 > We are interested in looking at the distributions of:
 > * 2 pairs of muons with opposite charges 
-> * with a mass in the Jpsi mass range. 
+> * with a mass in the J/psi mass range. 
 {: .challenge}
 
 The first of these two selections should be [implemented here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd1e79157a052e720c7660f358bef35967bed08e/eventselection/myntuple.C#L159) while the [second one should be added here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L166)
 
 
 > ## Note
-> A simplified solution of looping through the some combinations of muons in the event is implented in the code
+> A simplified solution of looping through the some combinations of muons in the event is implemented in the code
 > 
 > A paired muon index is defined [here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L132)
 > and the loop over the combinations starts [here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L148).
@@ -150,11 +150,32 @@ Please take some time to work out a solution and cross check the implementation 
 
 After implementing selection, we want to look at some distributions
 
-> ## Challenge
+> ## Challenge: filling histograms
 > The variables we will focus on in this exercise are:
 >    * The mass of each muon pair ([to be added in the code here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L160-L161))
 >    * The mass of 4 muons ( M(µ1µ2µ3µ4)-M(µ1µ2)-M(µ3µ4)+2*M(J/psi) ) ([to be added in the code here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L170))
 {: .challenge}
+> 
+> ## Solutions
+> > ### First muon mass pair definition
+> > ~~~cpp
+> > DiMuonMass1 = fitMup4vect[muIdxp11] + fitMup4vect[muIdxp12]).M();
+> > ~~~
+> {: .solution2}
+> > ### Second muon mass pair definition
+> > ~~~cpp
+> > DiMuonMass2 = fitMup4vect[muIdxp21] + fitMup4vect[muIdxp22]).M();
+> > ~~~
+> {: .solution2}
+> > ### Four muon mass
+> > ~~~cpp
+> > double m4Muon = (fitMup4vect[muIdxp11]+fitMup4vect[muIdxp12]+fitMup4vect[muIdxp21]+fitMup4vect[muIdxp22]).M()
+                    - (fitMup4vect[muIdxp11] + fitMup4vect[muIdxp12]).M()
+                    - (fitMup4vect[muIdxp21] + fitMup4vect[muIdxp22]).M()
+                    + JPSI_MASS + JPSI_MASS;
+> > ~~~
+> {: .solution2}
+{: .solution}
 
 > ## Extra Challenge
 > If you have time, you could check the difference in the distributions using the `fitMup4vect` variable instead of the raw one. Do you notice any difference?
@@ -162,7 +183,7 @@ After implementing selection, we want to look at some distributions
 
 ## Running the code
 
-After myntuple.C changed, you need to open root.
+After editing the `myntuple.C` macro, we need to compile (or recompile) the code in to a shared library.
 
 ~~~bash
 root -l
