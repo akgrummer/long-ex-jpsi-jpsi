@@ -208,6 +208,7 @@ Below we provide some hints on how to do it for one of the peaks.
 > ~~~
 > model.plotOn(frame, Components(X6500Reso), Name("X6500"), LineColor(kRed), LineStyle(kDotted));
 > leg.AddEntry(frame->findObject("X6500"), "BW1", "l");
+> ~~~
 > {: language-cpp}
 {: .solution}
 
