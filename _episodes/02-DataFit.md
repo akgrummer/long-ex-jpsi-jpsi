@@ -118,7 +118,9 @@ Also in this case it will take a few minutes to run the code and it will produce
 > - How many free parameters are in the fit?
 {: .challenge}
 
-To have an easier calculation of the peak significance we suggest repeating the fit fixing the value of the peak mass and width. How many free parameters are now in the fit?
+> ## Task 3
+> To have an easier calculation of the peak significance later we suggest repeating the fit fixing the value of the peak mass and width. How many free parameters are now in the fit?
+{: .challenge}
 
 > ## Tip
 > remember the *"FCN value"*! We will call it `FCN_BW0` later.
@@ -136,7 +138,7 @@ For semplicity, we will evaluate the local significance of the peak without syst
 ## Finding all the structures
 There are still a few peaks in the plots that have not been identified. 
 
-> ## Task 3
+> ## Task 4
 > Try to fit all the peaks adding the corresponding BW in the code. Use the implementation of the BW0 as an example. 
 {: .challenge}
 
