@@ -43,10 +43,10 @@ The overall purpose of this exercise is to provide you with a basic understandin
 > * [Kai Yi*](https://twiki.cern.ch/twiki/bin/view/Main/KaiYi), NNU ([kai.yi@cern.ch](mailto:kai.yi@cern.ch))
 > * [Irene Zoi](https://twiki.cern.ch/twiki/bin/view/Main/IreneZoi), Fermilab ([irene.zoi@cern.ch](mailto:irene.zoi@cern.ch))
 > * [Aidan Grummer](https://twiki.cern.ch/twiki/bin/view/Main/AidanGrummer), Fermilab ([agrummer@cern.ch](mailto:agrummer@cern.ch))
->
 > * Offline facilitators: Liangliang Chen (NNU), Shiyi Huang (NNU), Bolin Li (NNU), Xining Wang (NNU), Kai Yi (NNU) and Yilin Zhou (NNU).
-
+> 
 > *Lead Contact
+> 
 > <table> 
 >  <tr>
 >     <td align="center"><a href="https://github.com/mmusich"><img src="https://lpc.fnal.gov//CMSDAS2024/Kai_Yi.jpg" width="100px;" alt=""/><br /><sub><b>Kai Yi</b></sub></a><br /></td>
