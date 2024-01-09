@@ -34,6 +34,9 @@ The overall purpose of this exercise is to provide you with a basic understandin
 
 > ## Prerequisites
 > **Before going any further, please complete the [CMS DAS Pre-Exercises](https://fnallpc.github.io/cms-das-pre-exercises/index.html) and then follow the instructions on the [setup page](setup.md).**
+> The following short exercises are also recommended:
+> - [Statistics](https://fnallpc.github.io/statistics-das/)
+> - [Muon](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2024MuonExercise)
 {: .prereq}
 
 > ## Facilitators
@@ -61,13 +64,12 @@ The overall purpose of this exercise is to provide you with a basic understandin
 {: .discussion}
 
 > ## CERN Twiki, Introduction Slides and useful material
-> **The CERN TWiki of this long exercise can be found at [this link](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2024LongExercisejpsijpsi-pre). At the beginning of this short exercise an introduction will be done based on [these slides](https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolLPC2024LongExercisejpsijpsi-pre/CMSDAS_2024.pptx).**
+> **The CERN TWiki of this long exercise can be found at [this link](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2024LongExercisejpsijpsi-pre). At the beginning of this short exercise an introduction will be done based on [these slides](https://twiki.cern.ch/twiki/pub/CMS/SWGuideCMSDataAnalysisSchoolLPC2024LongExercisejpsijpsi-pre/CMSDAS_2024.pdf).**
+> Additional Material can be found here:
+> - [Analysis Note AN v15](http://cms.cern.ch/iCMS/jsp/openfile.jsp?tp=draft&files=AN2021_135_v15.pdf)
+> - [Paper v72](http://cms.cern.ch/iCMS/analysisadmin/get?analysis=BPH-21-003-paper-v72.pdf)
+> - [Pre-Approval Talk](https://indico.cern.ch/event/1099352/contributions/4625872/attachments/2356065/4020712/preapprovalNov-30-2021.pdf)
 {: .callout}
-{% comment %} This is a comment in Liquid {% endcomment %}
-
-> ## Close-out Slides
-> **You can find a guideline closeup for the Tracking and Vertexing Short Exercise questions and results on [these slides](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/CMSTrackingPOG/trackingvertexing/gh-pages/files/CMSDASCERN2023_TrackingVertexingExercise_Wrapup.pdf).**
-{: .challenge}
 {% comment %} This is a comment in Liquid {% endcomment %}
 
 {% include links.md %}
