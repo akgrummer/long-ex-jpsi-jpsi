@@ -1,9 +1,18 @@
 ---
-title: "CMSDAS Long Exercise: Exercise 1: Event selection "
+title: "Exercise 1: Event selection "
 teaching: 30
 exercises: Wednesday
 questions:
 - Event selections for 4 muon mass spectrum
+objectives:
+- perform selections on root variables
+- fill histograms
+keypoints:
+- In this exercise we made practical event selections using ROOTs Lorentz Vectors
+- We used these selections to calculate mass variables
+- Filled histograms and produced distributions of important variables in the analysis
+- Learned how to compile and run root macros
+- Gained experience with cpp syntax
 
 ---
 

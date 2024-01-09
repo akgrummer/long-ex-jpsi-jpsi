@@ -60,7 +60,7 @@ The overall purpose of this exercise is to provide you with a basic understandin
 {: .testimonial}
 
 > ## Mattermost Chat
-> **The [LongExJPsiJPsi](https://mattermost.web.cern.ch/cmsdaslpc2024/channels/longexjpsijpsi) channel will be available once you join the [CMSDAS@CERN2024](https://mattermost.web.cern.ch/cmsdascern2024/channels/town-square) team. Direction for how to join this Mattermost chat team can be found on the <a href="setup.html">setup</a> page.**
+> **The [LongExJPsiJPsi](https://mattermost.web.cern.ch/cmsdaslpc2024/channels/longexjpsijpsi) channel will be available once you join the [CMSDAS@CERN2024](https://mattermost.web.cern.ch/signup_user_complete/?id=7hedxbi647dbbqouez9449g3ba&md=link&sbr=su) team. Direction for how to join this Mattermost chat team can be found on the <a href="setup.html">setup</a> page.**
 {: .discussion}
 
 > ## CERN Twiki, Introduction Slides and useful material
