@@ -34,6 +34,9 @@ The overall purpose of this exercise is to provide you with a basic understandin
 
 > ## Prerequisites
 > **Before going any further, please complete the [CMS DAS Pre-Exercises](https://fnallpc.github.io/cms-das-pre-exercises/index.html) and then follow the instructions on the [setup page](setup.md).**
+> The following short exercises are also recommended:
+> - [Statistics](https://fnallpc.github.io/statistics-das/)
+> - [Muon](https://twiki.cern.ch/twiki/bin/view/CMS/SWGuideCMSDataAnalysisSchoolLPC2024MuonExercise)
 {: .prereq}
 
 > ## Facilitators
