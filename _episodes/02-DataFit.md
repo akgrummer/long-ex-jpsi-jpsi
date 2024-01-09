@@ -216,7 +216,15 @@ Below we provide some hints on how to do it for one of the peaks.
 
 > ## The final fit should look like this
 > <a href="../files/finalfit.pdf"><img src = "../files/finalfit.pdf" alt="final fit" width ="500"></a>
+> You can obtain it with [`nointerf_nofd.C`](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/exercise/fitpackage/nointerf_nofd.C)
 {: .solution}
+
+> > ## More about the data
+> > If you are able to identify all peaks and implement all the BW you should obtain a plot similar to the one you would obtain with [`nointerf_nofd.C`](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/exercise/fitpackage/nointerf_nofd.C). As the name of the scripts suggest, it still does not include interference terms. Below are the pdfs w/o interference terms:
+> > <a href="../files/noInterference.png"><img src = "../files/noInterference.png" alt="Pdf not considering the interference term" width ="500"></a>
+> > <a href="../files/Interference.png"><img src = "../files/Interference.png" alt="Pdf considering the interference term" width ="500"></a>
+> {: .solution}
+{: .challenge}
 
 > ## Next
 > **It is not over! Go to the next <a href="../03-ThinkingDeeper/index.html">exercise</a> to discuss your findings.**
