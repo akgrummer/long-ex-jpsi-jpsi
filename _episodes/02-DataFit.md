@@ -109,7 +109,7 @@ root -l null_BW0.C
 Also in this case it will take a few minutes to run the code and it will produce a long printout on the screen. The important informations are summarized at the end and the plot will be stored in `figure/fit_null_BW0.pdf`.
 
 > ## Your fit should look like this
-> <a href="../files/null_BW0.pdf"><img src = "../files/null_BW0.pdf" alt="BW0 fit" width ="500"></a>
+> <a href="../files/BW0.pdf"><img src = "../files/BW0.pdf" alt="BW0 fit" width ="500"></a>
 {: .solution}
 
 > ## Questions 
@@ -216,6 +216,8 @@ Below we provide some hints on how to do it for one of the peaks.
 > <a href="../files/finalfit.pdf"><img src = "../files/finalfit.pdf" alt="final fit" width ="500"></a>
 {: .solution}
 
-It is not over! Go to the next exercise to discuss your findings.
+> ## Next
+> **It is not over! Go to the next <a href="../03-ThinkingDeeper/index.html">exercise</a> to discuss your findings.**
+{: .callout}
 
 {% include links.md %}
