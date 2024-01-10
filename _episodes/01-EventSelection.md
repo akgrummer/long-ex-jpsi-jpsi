@@ -279,4 +279,10 @@ Then you can see any histogram (TH1F).
 root [2] myFourMuonmass->Draw()
 ~~~
 
+> ## Expected distributions after running over all 2016 files:
+> <a href="../files/myDiMuon1mass.png"><img src = "../files/myDiMuon1mass.png" alt="final fit" width ="500"></a>
+> <a href="../files/myDiMuon2mass.png"><img src = "../files/myDiMuon2mass.png" alt="final fit" width ="500"></a>
+> <a href="../files/myFourMuonmass.png"><img src = "../files/myFourMuonmass.png" alt="final fit" width ="500"></a>
+{: .solution}
+
 {% include links.md %}
