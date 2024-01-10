@@ -48,7 +48,7 @@ It is worth noting that only four-momentum and partial selections are provided i
 > Feel free to first add the variables and see how the distributions change once you add the different selections!
 {: .checklist}
 
-The selections can be added at [here in the code](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L146):
+The selections can be added at [here in the code](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L149):
 
 The variable used for the muons is `rawMup4vect`. You can use `rawMup4vect[i]` with `i` going from 0 to 3 to select the 4 different muons. 
 
@@ -57,7 +57,7 @@ The variable used for the muons is `rawMup4vect`. You can use `rawMup4vect[i]` w
 > 
 > have a look in `myntuple.C` before confirming the answer.
 > > ### answer
-> > found in the [code](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/main/eventselection/myntuple.C#L93): 
+> > found in the [code](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L93): 
 > > ~~~cpp
 > > vector<TLorentzVector> rawMup4vect
 > > ~~~
@@ -120,14 +120,14 @@ The variable used for the muons is `rawMup4vect`. You can use `rawMup4vect[i]` w
 > * with a mass in the J/psi mass range. 
 {: .challenge}
 
-The first of these two selections should be [implemented here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd1e79157a052e720c7660f358bef35967bed08e/eventselection/myntuple.C#L159) while the [second one should be added here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L166)
+The first of these two selections should be [implemented here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L157) while the [second one should be added here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L168)
 
 
 > ## Note
 > A simplified solution of looping through the some combinations of muons in the event is implemented in the code
 > 
-> A paired muon index is defined [here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L132)
-> and the loop over the combinations starts [here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L148).
+> A paired muon index is defined [here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L132)
+> and the loop over the combinations starts [here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L151).
 >
 > use the indices assigned in the loop (`muIdxp11, muIdxp12, muIdxp21, muIdxp22`) to look at different pairs of muons
 > > ### one muons charge 
@@ -161,8 +161,8 @@ After implementing selection, we want to look at some distributions
 
 > ## Challenge: filling histograms
 > The variables we will focus on in this exercise are:
->    * The mass of each muon pair ([to be added in the code here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L160-L161))
->    * The mass of 4 muons ( M(µ1µ2µ3µ4)-M(µ1µ2)-M(µ3µ4)+2*M(J/psi) ) ([to be added in the code here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/cd44732cc0b87f5fb9cc9791d4bbc4c6650cde4e/eventselection/myntuple.C#L170))
+>    * The mass of each muon pair ([to be added in the code here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L162-L163))
+>    * The mass of 4 muons ( M(µ1µ2µ3µ4)-M(µ1µ2)-M(µ3µ4)+2*M(J/psi) ) ([to be added in the code here](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/c429c15693d6b5db0d7720387b4ff38db08f8280/eventselection/myntuple.C#L171))
 {: .challenge}
 > 
 > ## Solutions
@@ -178,7 +178,7 @@ After implementing selection, we want to look at some distributions
 > {: .solution2}
 > > ### Four muon mass
 > > ~~~cpp
-> > double m4Muon = (fitMup4vect[muIdxp11]+fitMup4vect[muIdxp12]+fitMup4vect[muIdxp21]+fitMup4vect[muIdxp22]).M()
+> > m4Muon = (fitMup4vect[muIdxp11]+fitMup4vect[muIdxp12]+fitMup4vect[muIdxp21]+fitMup4vect[muIdxp22]).M()
                     - (fitMup4vect[muIdxp11] + fitMup4vect[muIdxp12]).M()
                     - (fitMup4vect[muIdxp21] + fitMup4vect[muIdxp22]).M()
                     + JPSI_MASS + JPSI_MASS;

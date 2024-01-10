@@ -23,9 +23,13 @@ keypoints:
 cd ~/nobackup/CMSDAS2024/DAS2024JpsiJpsi/CMSSW_11_1_1/src/
 cmsenv
 cd ../../fitpackage/
+mkdir figure/
 # Then you need to compile the pre-defined fit functions
 source makeLibSo.sh
+~~~
+{: .language-bash}
 
+~~~output
 # you should see this output:
 Processing BlattWeisskopfQ2.cxx+...
 Info in <TUnixSystem::ACLiC>: creating shared library /uscms_data/d3/lchen/cmsdas2024/CMSSW_11_1_1/src/fitpackage/./BlattWeisskopfQ2_cxx.so
@@ -38,7 +42,8 @@ Processing MyRelBWSquare.cxx+...
 
 ......
 ~~~
-{: .language-bash}
+
+There are few `Warnings` for some library builds at the end of the print out that should be ignored.
 
 ## The background fit
 
