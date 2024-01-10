@@ -73,7 +73,7 @@ root -l null.C
 It will take a few minutes to run the code and it will produce a long printout on the screen. The important informations are summarized at the end and the plot will be stored in `figure/fit_null.pdf`.
 
 > ## Your fit should look like this
-> <a href="../files/null.pdf"><img src = "../files/null.pdf" alt="background fit" width ="500"></a>
+> <a href="../files/fit_null.png"><img src = "../files/fit_null.png" alt="background fit" width ="500"></a>
 {: .solution}
 
 > ## Questions 
