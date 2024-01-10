@@ -73,7 +73,7 @@ root -l null.C
 It will take a few minutes to run the code and it will produce a long printout on the screen. The important informations are summarized at the end and the plot will be stored in `figure/fit_null.pdf`.
 
 > ## Your fit should look like this
-> <a href="../files/fit_null.png"><img src = "../files/fit_null.png" alt="background fit" width ="500"></a>
+> <a href="../files/null.png"><img src = "../files/null.png" alt="background fit" width ="500"></a>
 {: .solution}
 
 > ## Questions 
@@ -114,7 +114,7 @@ root -l null_BW0.C
 Also in this case it will take a few minutes to run the code and it will produce a long printout on the screen. The important informations are summarized at the end and the plot will be stored in `figure/fit_null_BW0.pdf`.
 
 > ## Your fit should look like this
-> <a href="../files/BW0.pdf"><img src = "../files/BW0.pdf" alt="BW0 fit" width ="500"></a>
+> <a href="../files/BW0.png"><img src = "../files/BW0.png" alt="BW0 fit" width ="500"></a>
 {: .solution}
 
 > ## Questions 
@@ -220,7 +220,7 @@ Below we provide some hints on how to do it for one of the peaks.
 {: .solution}
 
 > ## The final fit should look like this
-> <a href="../files/finalfit.pdf"><img src = "../files/finalfit.pdf" alt="final fit" width ="500"></a>
+> <a href="../files/finalfit.png"><img src = "../files/finalfit.png" alt="final fit" width ="500"></a>
 > You can obtain it with [`nointerf_nofd.C`](https://github.com/IreneZoi/DAS2024JpsiJpsi/blob/exercise/fitpackage/nointerf_nofd.C)
 {: .solution}
 
