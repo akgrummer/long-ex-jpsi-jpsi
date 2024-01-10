@@ -20,7 +20,7 @@ keypoints:
 
 ## Fit setup
 ~~~
-cd ~/nobackup/CMSDAS2024JpsiJpsi/CMSSW_11_1_1/src/
+cd ~/nobackup/CMSDAS2024/DAS2024JpsiJpsi/CMSSW_11_1_1/src/
 cmsenv
 cd ../../fitpackage/
 # Then you need to compile the pre-defined fit functions

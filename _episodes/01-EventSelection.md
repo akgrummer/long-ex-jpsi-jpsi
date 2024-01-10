@@ -35,9 +35,9 @@ Our first step now is to filter data contained in the ntuple file.
 
 Make sure to get into the CMSSW directory and set up the cmssw environment. Then move to the `eventselection/` directory from the git repo that was cloned in the setup steps.
 
-For example:
+For example (you may need to change the directory):
 ~~~bash
-cd ~/nobackup/CMSDAS2024JpsiJpsi/CMSSW_10_2_5/src
+cd ~/nobackup/CMSDAS2024/DAS2024JpsiJpsi/CMSSW_10_2_5/src
 cmsenv
 cd ../../eventselection/
 ~~~
@@ -168,12 +168,12 @@ After implementing selection, we want to look at some distributions
 > ## Solutions
 > > ### First muon mass pair definition
 > > ~~~cpp
-> > DiMuonMass1 = fitMup4vect[muIdxp11] + fitMup4vect[muIdxp12]).M();
+> > DiMuonMass1 = (fitMup4vect[muIdxp11] + fitMup4vect[muIdxp12]).M();
 > > ~~~
 > {: .solution2}
 > > ### Second muon mass pair definition
 > > ~~~cpp
-> > DiMuonMass2 = fitMup4vect[muIdxp21] + fitMup4vect[muIdxp22]).M();
+> > DiMuonMass2 = (fitMup4vect[muIdxp21] + fitMup4vect[muIdxp22]).M();
 > > ~~~
 > {: .solution2}
 > > ### Four muon mass
@@ -227,16 +227,16 @@ root [2]  .x runJobs_0.C
 
 ~~~output
 Processing runJobs_0.C...
-I am running 0th entries out of 1016991 total entries
-I am running 10000th entries out of 1016991 total entries
-I am running 20000th entries out of 1016991 total entries
-I am running 30000th entries out of 1016991 total entries
-I am running 40000th entries out of 1016991 total entries
-I am running 50000th entries out of 1016991 total entries
-I am running 60000th entries out of 1016991 total entries
-I am running 70000th entries out of 1016991 total entries
-I am running 80000th entries out of 1016991 total entries
-I am running 90000th entries out of 1016991 total entries
+I am running 0th entries out of 1296200 total entries
+I am running 10000th entries out of 1296200 total entries
+I am running 20000th entries out of 1296200 total entries
+I am running 30000th entries out of 1296200 total entries
+I am running 40000th entries out of 1296200 total entries
+I am running 50000th entries out of 1296200 total entries
+I am running 60000th entries out of 1296200 total entries
+I am running 70000th entries out of 1296200 total entries
+I am running 80000th entries out of 1296200 total entries
+I am running 90000th entries out of 1296200 total entries
 ......
 root [3]
 ~~~
