@@ -53,6 +53,8 @@ title: Setup
 > ~~~bash
 > ssh -Y USERNAME@cmslpc-sl7.fnal.gov
 > cd ~/nobackup/
+> mkdir CMSDAS2024
+> cd CMSDAS2024
 > git clone https://github.com/<USERNAME>/DAS2024JpsiJpsi.git
 > cd DAS2024JpsiJpsi
 > source /cvmfs/cms.cern.ch/cmsset_default.sh
