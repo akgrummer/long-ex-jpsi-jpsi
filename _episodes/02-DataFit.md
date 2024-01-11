@@ -134,7 +134,7 @@ Also in this case it will take a few minutes to run the code and it will produce
 
 
 ## The peak significance calculation
-For semplicity, we will evaluate the local significance of the peak without systematic uncertainties. We use the null hypothesis and signal hypohtesis to fit the data. From each of them we obtained the log-Likelihood `−lnL` (NLL). We called them `FCN_null` and `FCN_BW0` earlier as that is the nomenclature used by the `RooFit` tool used for the fit. 
+For simplicity, we will evaluate the local significance of the peak without systematic uncertainties. We use the null hypothesis and signal hypothesis to fit the data. From each of them we obtained the log-Likelihood `−lnL` (NLL). We called them `FCN_null` and `FCN_BW0` earlier as that is the nomenclature used by the `RooFit` tool used for the fit. 
 
 You can read more about this calculation based on [Wilks'theorem here](https://www.wikiwand.com/en/Wilks'_theorem). The theorem says that as the sample size approaches infinity, the distribution of the test statistic −2log(Λ) asymptotically approaches the chi-squared (chi2) distribution under the null hypothesis H_0 (`null` in our case). Here, Λ denotes the likelihood ratio, and the chi2 distribution has degrees of freedom equal to the difference in dimensionality of Θ and Θ_0, where Θ
 is the full parameter space and Θ_0 is the subset of the parameter space associated with H_0. This result means that for large samples and a great variety of hypotheses, a practitioner can compute the likelihood ratio Λ for the data and compare -2log(Λ) = -2log(`FCN_null`/`FCN_BW0`) = -2( log(`FCN_null`)- log(`FCN_BW0`)) to the chi2 value corresponding to a desired statistical significance as an approximate statistical test.
